@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("5KDpPTMHLWrsSMR2u");
+        })();
+    </script>
+
+    <script src="emailjs.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">RESUME</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#services">Skills</a>
+            <a href="#technical">Technical Summary</a>
+
+            <a href="#project">Project</a>
+            <!--  <a href="#education">Education</a> -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Shantamma Siragan</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi neque dolore aliquid magni minus eaque illo repellendus pariatur!
+                 Asperiores hic corporis veniam reprehenderit quia nihil ut deleniti a ipsa eligendi.</p> -->
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/shantamma-siragan-6a766827a/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/shantamma76/"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="resum.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img width="500px" height="570px" src="./shanta-photo.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img width="500px" height="570px" src="./shanta-photo.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>FullStack Developer!</h3>
+            <p>"I am currently undergoing Java Full Stack training at X-Workz ODC, where I am gaining comprehensive
+                knowledge and hands-on
+                experience in both front-end and back-end development technologies. As a Software Developer Trainee, I
+                am continuously learning
+                new technologies and applying them to real-world projects to enhance my skills. I am excited about the
+                opportunity to grow into a
+                full-fledged software developer through hands-on experience and mentorship"</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-----------Education part is start ------------->
+    <section class="education" id="education">
+        <h2 class="heading"> <span>Education</span></h2>
+        <ul id="accordion">
+            <li>
+                <label for="first">BACHELOR OF TECHNOLOGY<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="first" checked>
+                <div class="content">
+
+                    <!-- Graduation symbol centered -->
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <p>
+                        <span style="float: left; color: black;">Information Science and Engineering</span>
+                        <span style="float: right; color: black;">&#128197; June 04, 2024 </span><br>
+                        Sharnabasva University<br>
+                        Kalaburgi.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <label for="second">PUC<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="second" checked>
+                <div class="content">
+
+                    <!-- Graduation symbol centered -->
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxs-institution'></i>
+                    </div>
+                    <p>
+                        <span style="float: left; color: black;">Government PU College For Girls</span>
+                        <span style="float: right; color: black;">&#128197; March 14, 2020 </span><br>
+                        Oppo.SP Office<br>
+                        Kalaburgi.
+                    </p>
+                </div>
+            </li>
+
+
+            <li>
+                <label for="third">SSLC<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="third" checked>
+                <div class="content">
+                    <!-- Graduation symbol centered -->
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxs-school'></i>
+                    </div>
+
+                    <p>
+                        <span style="float: left; color: black;">Government High School</span>
+                        <span style="float: right; color: black;">&#128197; April 10, 2018 </span><br>
+                        Vijay Nagar Colony<br>
+                        Kalaburgi.
+                    </p>
+
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading"> <span>Skills</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-java'></i>
+                <h3>Java</h3>
+                <p>"Proficient in Java programming with extensive knowledge of core Java concepts,
+                    including object-oriented programming (OOP) principles such as inheritance, polymorphism, and
+                    encapsulation.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-file-html'></i>
+                <i class='bx bxs-file-css'></i>
+                <h3>Web Technology</h3>
+                <p>"Experienced in using a wide range of web technologies to build dynamic, responsive, and scalable web
+                    applications.Proficient in front-end development with HTML, CSS, JavaScript,& frameworks."</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-data'></i>
+                <h3>SQL</h3>
+                <p>"Proficient in SQL with strong experience in designing, querying, and optimizing relational
+                    databases. Skilled in
+                    writing complex SQL queries to retrieve, manipulate, and analyze data efficiently."</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div> <br> </br>
+
+            <div class="services-box">
+                <i class='bx bxl-spring-boot'></i>
+
+                <h3>Spring MVC</h3>
+                <p>"Spring MVC is a web framework that implements the Model-View-Controller pattern. It separates
+                    application logic into Model,
+                    View, and Controller components. The DispatcherServlet manages requests, routing them to appropriate
+                    handlers and views."</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-java'></i><i class='bx bxs-data'></i>
+
+                <h3>JDBC</h3>
+                <p>"JDBC (Java Database Connectivity) is an API for connecting Java applications to relational
+                    databases. It allows
+                    executing SQL queries and retrieving results through Java code. JDBC provides a standard interface
+                    for interacting
+                    with databases using drivers."</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-file-html'></i>
+
+                <h3>JPA</h3>
+                <p>"JPA (Java Persistence API) is a specification for object-relational mapping in Java.
+                    It allows developers to manage database entities using Java objects. JPA simplifies CRUD operations
+                    and eliminates the need for complex SQL queries."</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!--Skills end-->
+
+
+    <!--Technical Summary part start-->
+
+    <section class="technical" id="technical">
+        <h2 class="heading"> <span>Technical Summary</span></h2>
+        <ul id="accordion1">
+            <li>
+                <label for="first1">Java<span>&#x3e;</span></label>
+                <input type="radio" name="accordion1" id="first1" checked>
+                <div class="content">
+
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxl-java'></i>
+                    </div>
+
+                    <p>Proficient in OOP Principles:<br>
+                        •Skilled in implementing Encapsulation, Inheritance, Polymorphism,and Abstraction.<br>
+                        •Memory Diagram: Understanding of Stack Memory and Instance Memory in Java.<br>
+                        •Collections Framework: Expertise in using data structures like Lists, Sets, Maps, and Queues,
+                        with a focus on performance and best practices.<br>
+                        *Exception Handling:<br>
+                        •Skilled in writing robust and fault-tolerant applications using throw, throws, try-catch
+                        blocks, and custom exceptions.<br>
+                        •Object Class: Proficient in overriding and utilizing methods like equals(), toString (), and
+                        hashCode().<br>
+                        •Automated routine tasks using scripts to reduce manual effort and increase productivity DTOs:
+                        Experience in implementing Data Transfer Objects (DTOs) for data encapsulation and transfer.<br>
+                        •Array and String Manipulations: Strong knowledge of working with arrays and strings for
+                        efficient data handling.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <label for="second1">SQL<span>&#x3e;</span></label>
+                <input type="radio" name="accordion1" id="second1" checked>
+                <div class="content">
+
+
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxs-data'></i>
+                    </div>
+                    <p>SQL:<br>
+                        •Skilled in writing complex SQL queries, including WHERE, SELECT, JOIN, GROUP BY, HAVING, and
+                        subqueries for data retrieval and analysis.<br>
+                        •Proficient in SQL statements, including DDL for schema design, DQL for advanced data retrieval,
+                        DML for data handling, DCL for managing permissions, and TCL for ensuring data integrity and
+                        transactional consistency.<br>
+                        •Experienced in implementing CRUD operations (Create, Read, Update, Delete) for efficient data
+                        handling.<br>
+                        •Proficient in designing and managing Database Management Systems (DBMS) for structured data
+                        storage and retrieval.<br>
+
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <label for="third1">Web Technology<span>&#x3e;</span></label>
+                <input type="radio" name="accordion1" id="third1" checked>
+                <div class="content">
+
+
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxs-file-html'></i><i class='bx bxs-file-css'></i>
+                    </div>
+                    <p>•Proficient in creating semantic, well-structured web pages using HTML5 with proper use of tags,
+                        attributes, and forms.<br>
+                        •Expertise in creating forms, handling user input, and integrating validation techniques using
+                        HTML elements.
+
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <label for="fourth">JDBC & JPA<span>&#x3e;</span></label>
+                <input type="radio" name="accordion1" id="fourth" checked>
+                <div class="content">
+
+
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxl-java'></i><i class='bx bxs-data'></i>
+                    </div>
+                    <p>• Proficient in using JDBC for connecting Java applications to
+                        relational databases, executing SQL queries, and handling result
+                        sets. 
+                        •Experienced in performing CRUD operations using JDBC with
+                        proper transaction management and connection pooling
+                        techniques. 
+                        •Expertise in using PreparedStatement and CallableStatement for
+                        efficient and secure database interactions. 
+                        •Skilled in integrating JPA with Spring Data JPA for easier database
+                        access, repository patterns, and automatic implementation of
+                        queries.
+                        •Implemented transactions, and fetching to improve performance in
+                        Hibernate-based applications.
+                       
+                    </p>
+                </div>
+            </li>
+
+            
+            <li>
+                <label for="fivth">Spring MVC<span>&#x3e;</span></label>
+                <input type="radio" name="accordion1" id="fivth" checked>
+                <div class="content">
+
+
+                    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                        <i class='bx bxl-spring-boot'></i>
+                    </div>
+                    <p>• Experienced in configuring and using Spring DispatcherServlet to
+                        manage request routing and response handling. 
+                       • Skilled in defining controllers with @Controller and @RestController
+                        annotations to handle HTTP requests and implement business logic. 
+                       • Proficient in implementing RESTful web services in Spring MVC using
+                        @RequestMapping, @GetMapping, @PostMapping, and other HTTP
+                        mapping annotations. 
+                       • Skilled in defining controllers with @Controller and @RestController
+                        annotations to handle HTTP requests and implement business logic. 
+                       Hands-on experience with Spring Data JPA and Spring JDBC for database interaction in Spring MVC applications.
+                       
+                    </p>
+                </div>
+            </li>
+
+
+        </ul>
+    </section>
+    <!--Technical Summary part end-->
+
+
+    <!--Project start-->
+    <section class="project" id="project">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <img src="./project_img.jpeg" alt="">
+                <div class="project-layer">
+                    <h4>Power Theft And Fault Detection Using IoT Technology</h4>
+                    <p>Power theft and fault detection using IOT involves deploying sensors in the electrical grid to
+                        monitor parameters like
+                        voltage and current. Data is transmitted to a central system for real time analysis, detecting
+                        anomalies such as theft
+                        or faults. Alerts are generated for prompt action, enhancing grid efficiency and safety.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="project-box">
+                    <img src="./desent-ganesha1.avif" alt="">
+                    <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores sit ad, omnis magnam
+                        doloremque consequatur illum
+                        accusantium aliquam eum ea quos ab repellat quod saepe accusamus quisquam maiores eaque!
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>  
+                
+            </div>-->
+
+    <!--Project ends-->
+
+
+
+    <!-- Contact Section Design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contact-form">
+
+            <div class="input-box">
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="mobile_number" id="mobile_number" placeholder="Mobile Number" required>
+                <input type="text" name="subject" id="subject" placeholder="Email Subject" required>
+            </div>
+
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send" onclick="sendMail()" class="btn">
+
+        </form>
+
+    </section>
+
+   
+
+
+    <!--------footer design------->
+    <footer class="footer">
+        <div class="footer-text">
+            <p> All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-----Scroll reveal------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!-----Typed js------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
